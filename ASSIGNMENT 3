@@ -1,0 +1,37 @@
+# Simulate MoMo stack
+stack = ["PIN", "Amount", "Confirm"]   # Push order
+stack.pop()                           # Undo once (pop top element)
+print(stack)
+
+stack = ["Rev1", "Rev2", "Rev3"]
+stack.pop()   # Undo once
+stack.pop()   # Undo twice
+print(stack)
+
+# Step 1: create empty stack
+stack = []
+
+# Step 2: push X, Y, Z, W
+for item in ["X","Y","Z","W"]:
+    stack.append(item)
+print("After pushes:", stack)   # ['X','Y','Z','W']
+
+# Step 3: pop once (W removed)
+stack.pop()
+print("After 1st pop:", stack)  # ['X','Y','Z']
+
+# Step 4: pop again (Z removed)
+stack.pop()
+print("After 2nd pop:", stack)  # ['X','Y']
+
+from collections import deque
+
+queue = deque(["Client"+str(i) for i in range(1,11)])
+for _ in range(6):
+    queue.popleft()  # serve first 6
+print(queue[0])      # who is next
+
+queue = deque(["Client"+str(i) for i in range(1,8)])
+first = queue.popleft()   # serve first
+second = queue.popleft()  # serve second
+print(second)
