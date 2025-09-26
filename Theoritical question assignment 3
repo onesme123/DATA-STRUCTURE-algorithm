@@ -1,0 +1,19 @@
+3. Reflection (Theory Only)
+Why stack is powerful for reversing?
+A stack uses Last-In-First-Out (LIFO) order.
+When you push elements in order, the last element goes on top.
+When you pop, you get the last element first.
+This naturally reverses the order of items without extra loops.
+Example: pushing letters of a word then popping outputs them reversed.
+4.Reflection: Why stack is powerful for reversing?
+•	A stack works on Last-In, First-Out (LIFO) order.
+•	When you push items in one sequence and pop them out, the order is reversed automatically.
+•	This is why stacks are ideal for undo actions, backtracking, reversing strings, etc
+
+
+
+QUENE QUESTIONS:
+3.Reflection: Why FIFO matters in classrooms?
+•	FIFO (First In, First Out) ensures fairness and discipline.
+•	Students who come early are attended first — prevents crowding and complaints.
+•	It mirrors how service lines work in banks, hospitals, or ticketing.
